@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 export default function AllTheBooks() {
     let topHorror=horrorBooks.slice(0,5);
-    let topFantasy=fantasyBooks.slice(0,10);
+    let topFantasy=fantasyBooks.slice(0,8);
 
     const [inputName,setInputName]=useState('');
     const [listBook,setListBook]=useState([]);
@@ -35,19 +35,22 @@ export default function AllTheBooks() {
             {(inputName!=0)&&<Button className='ms-2' variant="outline-danger" onClick={deleteList}>Reset</Button>}
         </Form>
         </div>
+        {(listBook!=0) && (
         <div>
         <h2>Ricerca</h2>
         <div className='row justify-content-center'>
         {listBook.map((book)=><CardBook key={book.asin} book={book}/>)}
         </div>
         </div>
-
+        )}
+        {(listBook==0) && (
         <div>
-        <h2>Top 10: Fantasy</h2>
+        <h2>Top 8: Fantasy</h2>
         <div className='row justify-content-center'>
         {topFantasy.map((book)=><CardBook key={book.asin} book={book}/>)}
         </div>
         </div>
+        )}
     </div>
   )
 }

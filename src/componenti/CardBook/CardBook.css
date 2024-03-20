@@ -1,11 +1,8 @@
-.cardsel{
-    -webkit-box-shadow: inset 0px 0px 150px 0px rgba(250,0,0,0.5);
-    -moz-box-shadow: inset 0px 0px 150px 0px rgba(250,0,0,0.5);
-    box-shadow: inset 0px 0px 150px 0px rgba(250,0,0,0.5);  
-    border: 5px solid #ff0000;      
+.cardsel{ 
+    border: 2px solid #ff0000!important;      
 }
 .focusCard:hover{
-    -webkit-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,0.5);
-    box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,0.5);        
+    -webkit-box-shadow: inset 0px 0px 50px 0px rgba(142, 142, 142, 0.5);
+    -moz-box-shadow: inset 0px 0px 50px 0px rgba(142, 142, 142, 0.5);
+    box-shadow: inset 0px 0px 50px 0px rgba(142, 142, 142, 0.5);        
 }
